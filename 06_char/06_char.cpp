@@ -19,6 +19,22 @@ int main()
     char str[5] = { 'A','A', 'A', 'A', 'A' };
 
     return 0; 
+
+    // 0에 대하여 
+    // 0 NULL nullptr '\0' -> 값은 전부 0이다.
+    
+    // 다 같은 0이지만, 가독성의 차이가 생긴다.
+    // 상단처럼 쓰면 변수의 자료형의 유추가 가능하다. 
+    char ch = '\0';
+    void* p = nullptr;
+    int data = NULL;
+    int num = 0; 
+
+    // 아래와 동일 
+    char ch = 0;
+    void* p = 0;
+    int data = 0;
+    int num = 0;
 }
 
 

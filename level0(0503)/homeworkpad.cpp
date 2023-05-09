@@ -1,19 +1,36 @@
 ﻿// 숙제 푸는 패드. 
 
-//9번 풀이
+// f11 테스트해보기. 
+// 4번 풀이
 #include <iostream>
+
+void KFC()
+{
+	std::cout << "KFC입니다.";
+}
+
+void MC()
+{
+	std::cout << "MC입니다.";
+}
+
 int main()
 {
-	int arr[4] = {};
 	int a = 0;
-	int b = 0;
-	std::cin >> a >> b;
+	std::cin >> a;
 
-	arr[0] = a;
-	arr[2] = b;
+	if (a == 1)
+	{
+		KFC();
+	}
 
-	// std::cout << arr;
-	// arr 출력 결과: 0000000F5E6FF928
+	else if (a == 2)
+	{
+		MC();
+	}
 
-	std::cout << arr[0] << arr[1] << arr[2] << arr[3];
+	else
+	{
+		std::cout << "입력한 숫자가 1또는 2가 아닙니다.";
+	}
 }
