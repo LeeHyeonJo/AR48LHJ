@@ -36,14 +36,21 @@ int main()
     int data = 0;
     int num = 0;
 
+ 
     //자료형의 변환 기본문법 
 
-    char test = 'A'; // 자료형 변수 test
-    std::cout << (int)test; // 1바이트에서 4바이트로 변화  = test를 정수로 변환
+     // 1. 문자형(char) 변수를 정수형(int)로 바꿔보기
+    // 1바이트(char)에서 4바이트(int)로 형변환 
+    char text = 'X'; // 자료형 변수 text 선언, X대입(아스키값 88)
+    std::cout << text; // text에 저장된 X을 확인할 수 있음. 
+    std::cout << (int)text; // 형변환; text(x/88)을 88로 변환. 
+    // ㄴ 형변환이 되면서 char text에 저장된 아스키값이 int형으로 출력된다. 
 
-    int test2 = 65; // 정수형 변수 test1
-    std::cout << test2; // 4바이트에서 1바이트려 변화 = 값이 짤릴 수 있음 !! 
-    std::cout << (int)test2;
+    // 2. 정수형(int) 변수를 문자형(char)로 바꿔보기 (*)
+    // 4바이트(int)에서 1바이트(char)로 변화 = 값이 짤릴 수 있음!! 
+    int number = 97; // 정수형 변수 number 선언, 97 대입. 
+    std::cout << number; // number에 저장된 97을 확인할 수 있음. 
+    std::cout << (char)number; // 형변환; number에 저장된 20을 아스키값으로 사용. 97에 대응하는 a를 출력. 
 }
 
 
