@@ -35,6 +35,15 @@ int main()
     void* p = 0;
     int data = 0;
     int num = 0;
+
+    //자료형의 변환 기본문법 
+
+    char test = 'A'; // 자료형 변수 test
+    std::cout << (int)test; // 1바이트에서 4바이트로 변화  = test를 정수로 변환
+
+    int test2 = 65; // 정수형 변수 test1
+    std::cout << test2; // 4바이트에서 1바이트려 변화 = 값이 짤릴 수 있음 !! 
+    std::cout << (int)test2;
 }
 
 
