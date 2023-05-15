@@ -70,7 +70,12 @@ int main()
 
        // 1-1. 구조체에서 객체 생성(p1.p2 생성임) 
        //구조체이름 객체 이름 ; (점 없음 공백) 
-    player saber;
+
+    player saber; // 구조체에서 객체 생성
+
+    saber.hp // 
+
+
     player lancer;
 
     // 1-2. 생성한 객체 내부의 변수(메모리)에 접근하는 법
