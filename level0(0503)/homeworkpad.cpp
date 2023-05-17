@@ -1,46 +1,23 @@
-﻿// 7번
+﻿//6
+
 #include <iostream>
 
-int arr[7][5] =
+comparego()
 {
-	{1,},
-	{1,0,1,},
-	{1,1,0,1,},
-	{1,0,1,},
-	{0,1,0,0,1},
-	{0,0,0,1,},
-	{1,1,}
-};
 
-int input()
-{
-	int num = 0;
-	std::cin >> num;
-	return num; 
-}
-
-int process()
-{
-	int count = 0; 
-	for (int x = 0; x < 5; x++)
-	{
-		if (arr[0][x] == 1)
-		{
-			count++; 
-		}
-	}
-
-	return count; 
-}
-
-output()
-{
-	std::cout << ;
 }
 
 int main()
 {
-	input();
-	process();
-	output();
+	int arr[5] = {3,5,1,2,7};
+
+	int arr1[5] = {};
+	int a = 0;
+	for (int i = 0; i < 5; i++)
+	{
+		std::cin >> a;
+		arr1[i] = a;
+	}
+
+	comparego(arr,arr1); //배열 여기로 전달... 
 }
