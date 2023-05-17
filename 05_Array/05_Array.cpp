@@ -142,6 +142,22 @@ int main()
         std::cout << std::endl;
     }
 
+    // ** 2중 배열에 입력받는 법 ** 
+
+    // 이중배열  선언함. 
+    // str[3][100000] = 
+    // {
+    // "asdgasgd", 
+    // "asdfasdf",
+    // "gjhrty"
+    // }; 
+    // 
+    // **각 가로줄에 입력받는법. 
+    // std:cin >>  str[0]; (= &str[0][0]) 
+    // std:cin >>  str[1]; (= &str[1][0]) 
+    // std:cin >>  str[2]; (= &str[2][0]) 
+    //                y축        y축  x축
+
     return 0; 
 }
 

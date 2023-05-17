@@ -4,9 +4,9 @@
 #include <iostream>
 int main()
 {
-// while 문 & break
+    // while 문 & break
 
-   //1. while 문 문법 
+       //1. while 문 문법 
 
     int z = 0; // 초기화 
     while (z < 10) // 조건식 
@@ -38,6 +38,13 @@ int main()
         a++;
     }
 
+
+    //2. 2중while문
+    int y = 0;
+    while (y < 10)
+    {
+
+    }
 
     return 0;
 }
