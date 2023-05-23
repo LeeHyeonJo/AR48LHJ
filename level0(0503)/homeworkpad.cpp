@@ -1,27 +1,22 @@
-﻿//9번
+﻿// 재귀함수 모법담안
 #include <iostream>
+
+int arr[5] = { 5,7,1,2,3 };
+
+void wow(int level)
+{
+	if (level == 5)
+	{
+		return; 
+	}
+	std::cout << arr[level]; 
+	wow(level + 1);
+	// return 받고 돌아오는 곳 
+	std::cout << arr[level]; 
+}
+
 int main()
 {
-	int a = 0; 
-	int b = 0;
-	char ch = 0;
-	std::cin >> a >> b >> ch; 
-
-	 // ch = 출력할 문자
-	// a  = y축 , b = x축 
-
-	for (int i = 0; i < 2; i++)
-	{
-		for (int y = 0; y < a; y++)
-		{
-			for (int x = 0; x < b; x++)
-			{
-				std::cout << ch;
-			}
-			std::cout << std::endl;
-		}
-		std::cout << std::endl;
-		std::cout << std::endl;
-	}
-
+	wow(0);
+	std::cout << "재귀함수가 종료되었습니다."; 
 }

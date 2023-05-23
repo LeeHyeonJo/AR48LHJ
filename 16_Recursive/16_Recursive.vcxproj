@@ -24,6 +24,7 @@
     <ProjectGuid>{936ec2c2-d63c-4492-8ab0-f0e1a577b284}</ProjectGuid>
     <RootNamespace>My16Recursive</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>16_Recursive(!)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
