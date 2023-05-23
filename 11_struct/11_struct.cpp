@@ -26,6 +26,12 @@ private:
     int def = 50;
 };
 
+// 0524: 구조체의 배열 
+// 구조체의 객체는 배열로도 선언이 가능하다
+// Player players[256] 
+// player라는 구조체의 객체 players가 256개 생성된 상태. 
+// ㄴ 전부 각각의 hp, mp등을 갖고 있다. 
+
 // struct player의 메모리 사용상황
 // [int hp][int mp][int att][int def] = 총합 16바이트  
 // 객체 player 생성 시 player와 동일한 메모리가 생성되는건가?
