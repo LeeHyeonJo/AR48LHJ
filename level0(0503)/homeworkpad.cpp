@@ -1,16 +1,27 @@
-﻿//5번
-// 나누기 (/: 몫) & MOD  (%: 나머지) 연산자 연습 
-
+﻿//9번
 #include <iostream>
 int main()
 {
-	int num = 0;
-	std::cin >> num;
+	int a = 0; 
+	int b = 0;
+	char ch = 0;
+	std::cin >> a >> b >> ch; 
 
-	while (num < 1000 || num > 9999)
+	 // ch = 출력할 문자
+	// a  = y축 , b = x축 
+
+	for (int i = 0; i < 2; i++)
 	{
-		std::cin >> num;
+		for (int y = 0; y < a; y++)
+		{
+			for (int x = 0; x < b; x++)
+			{
+				std::cout << ch;
+			}
+			std::cout << std::endl;
+		}
+		std::cout << std::endl;
+		std::cout << std::endl;
 	}
-
 
 }

@@ -66,7 +66,6 @@ int main()
     delete dynamicArr;  
 
     new 
-
     /// 0000000c C++에서 이거 너무 힘들어서 새로운 문법을 만듦
 
 

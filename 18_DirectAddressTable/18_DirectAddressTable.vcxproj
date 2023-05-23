@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6ffa0041-4ee9-46c0-81d8-0b06be83068f}</ProjectGuid>
-    <RootNamespace>My20dynamic</RootNamespace>
+    <ProjectGuid>{92a49d0c-5992-4963-b5d2-0573e107d9fa}</ProjectGuid>
+    <RootNamespace>My18DirectAddressTable</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>20_dynamicAllocate</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="20_dynamic.cpp" />
+    <ClCompile Include="18_DirectAddressTable.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
