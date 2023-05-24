@@ -24,7 +24,7 @@
     <ProjectGuid>{92a49d0c-5992-4963-b5d2-0573e107d9fa}</ProjectGuid>
     <RootNamespace>My18DirectAddressTable</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>18_DirectAddressTable(!)</ProjectName>
+    <ProjectName>18_DirectAddressTable(!!)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
