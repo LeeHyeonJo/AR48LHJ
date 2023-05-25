@@ -40,17 +40,19 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13_flag", "13_flag\13_flag.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14_string", "15_string\15_string.vcxproj", "{D38F4AE6-DF39-4E07-88D2-A78D01BEEAC4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15_selectsort", "15_selectsort\15_selectsort.vcxproj", "{E87C5F9C-7B71-4368-824D-A9EE54C2EF8F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15_selectsort(알고리즘1)", "15_selectsort\15_selectsort.vcxproj", "{E87C5F9C-7B71-4368-824D-A9EE54C2EF8F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_class", "19_class\19_class.vcxproj", "{89B90A86-6C59-45B2-9190-CEBDAD4C2CEE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_dynamicAllocate", "20_dynamic\20_dynamic.vcxproj", "{6FFA0041-4EE9-46C0-81D8-0B06BE83068F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16_Recursive", "16_Recursive\16_Recursive.vcxproj", "{936EC2C2-D63C-4492-8AB0-F0E1A577B284}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16_Recursive(!)", "16_Recursive\16_Recursive.vcxproj", "{936EC2C2-D63C-4492-8AB0-F0E1A577B284}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17_Direct", "17_Direct\17_Direct.vcxproj", "{2299291D-66C3-4AB2-BD1C-5154A629574E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17_Direct(!!)", "17_Direct\17_Direct.vcxproj", "{2299291D-66C3-4AB2-BD1C-5154A629574E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18_DirectAddressTable", "18_DirectAddressTable\18_DirectAddressTable.vcxproj", "{92A49D0C-5992-4963-B5D2-0573E107D9FA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18_DirectAddressTable(!!)", "18_DirectAddressTable\18_DirectAddressTable.vcxproj", "{92A49D0C-5992-4963-B5D2-0573E107D9FA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20.5_string함수", "20.5_string함수\20.5_string함수.vcxproj", "{C80DF3ED-9FC3-42EF-9356-736C6DA59AE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -228,6 +230,14 @@ Global
 		{92A49D0C-5992-4963-B5D2-0573E107D9FA}.Release|x64.Build.0 = Release|x64
 		{92A49D0C-5992-4963-B5D2-0573E107D9FA}.Release|x86.ActiveCfg = Release|Win32
 		{92A49D0C-5992-4963-B5D2-0573E107D9FA}.Release|x86.Build.0 = Release|Win32
+		{C80DF3ED-9FC3-42EF-9356-736C6DA59AE0}.Debug|x64.ActiveCfg = Debug|x64
+		{C80DF3ED-9FC3-42EF-9356-736C6DA59AE0}.Debug|x64.Build.0 = Debug|x64
+		{C80DF3ED-9FC3-42EF-9356-736C6DA59AE0}.Debug|x86.ActiveCfg = Debug|Win32
+		{C80DF3ED-9FC3-42EF-9356-736C6DA59AE0}.Debug|x86.Build.0 = Debug|Win32
+		{C80DF3ED-9FC3-42EF-9356-736C6DA59AE0}.Release|x64.ActiveCfg = Release|x64
+		{C80DF3ED-9FC3-42EF-9356-736C6DA59AE0}.Release|x64.Build.0 = Release|x64
+		{C80DF3ED-9FC3-42EF-9356-736C6DA59AE0}.Release|x86.ActiveCfg = Release|Win32
+		{C80DF3ED-9FC3-42EF-9356-736C6DA59AE0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

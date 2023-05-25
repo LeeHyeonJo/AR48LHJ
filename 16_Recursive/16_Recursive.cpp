@@ -3,6 +3,23 @@
 // 복습; 재귀함수 문제풀이 파란 노트에 푼 거 그림 꼭 참고하기 
 #include <iostream>
 
+// 0525 
+// 재귀함수를 중첩할 때!! 
+// 함수가 어떻게 작동되는지 그림 파악하기. 
+void kfc(int level)
+{
+
+	if (level == 2)
+	{
+		return;
+	}
+
+	kfc(level + 1);
+	kfc(level + 1);
+	kfc(level + 1);
+	// 작동이 어떻게 그려지는지 직접 손으로 그려가면서 확인해보기 
+}
+
 void bbc(int level)
 {	
 	if(level == 3)
