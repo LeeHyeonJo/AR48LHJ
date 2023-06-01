@@ -89,8 +89,8 @@ void AddNode(char data)
 		//p->pNext->pNext = nullptr; // 생성된 노드(n2)의 pNext 에 nullptr(마지막이니까) 를 넣어준다. 
 
 		// 2. tail을 이용한 노드추가
-		tail->pNext = new Node();
-		tail->pNext->ch = data;
+		tail->pNext = new Node(); // = n1의 pNext가(= tail->pNext) 새롭게 할당된 노드(n2) 자체의 주소를 받도록. (연결)
+		tail->pNext->ch = data; // tail->pNext-> 이게 n2를 역참조 
 		tail->pNext->pNext = nullptr;
 		// tail을 새롭게 생성된 노드쪽으로 옮겨준다. 
 		tail = tail->pNext;
