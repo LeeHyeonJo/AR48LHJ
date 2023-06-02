@@ -94,9 +94,36 @@ void AddNode(char data)
 		tail->pNext->pNext = nullptr;
 		// tail을 새롭게 생성된 노드쪽으로 옮겨준다. 
 		tail = tail->pNext;
+		// tail이 n2를 가리켜야 함. n2의 주소는 n1 pNext에 저장되어있음. 
 	}
 }
 
+// ******addnode는 가장 뒤에 노드 추가 (푸쉬백)*******
+// ******가장 앞에 노드 추가하는거 필기 복붙 (푸쉬프론트) ******
+
+// 0602 노드 지워주는 법 *****필기 복붙하기**********
+void deletenode(char data)
+{
+	Node* pNode = head; // 새로운 리모컨 추가 . for문에서 i 역할 (노드 돌면서 nullptr 찾는 역할) 
+	Node* prevNode = head; // 새로운 리모컨 추가 (목적: 지워지는 노드의 "앞" 노드 기억하는 목적) 
+
+	/// 지워야 하는 노드가 제일 앞일떄  *****필기 복붙하기******
+	if (pNode->ch == data) // 노드가 가리킨 것이, 헤드와 동일하다면(직접 해보기) 
+	{
+		head = pNode->pNext; // 헤드를 n1에서 n2로 연결시켜버린다. 
+
+		// 필기 복붙하기 
+
+		return; 
+	}
+
+	for(//pNode가 nullptr을 가리키지 않을떄만 돌기 ; 증감식은 pNode = pNode->next)
+		{
+			// 필기 복붙하기 
+		}
+
+
+}
 
 int main()
 {   // 예시: 새로운 노드를 추가하고, 거기에  data 값을 C, A, D를 넣어주려고 한다. (노드 1개당 하나씩) 

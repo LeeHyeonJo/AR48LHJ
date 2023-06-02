@@ -3,11 +3,11 @@
 
 #include <iostream>
 
-struct player
+struct player1
 {
 	int hp;
 
-	player()
+	player1()
 		: hp(100)
 	{
 		// 생성자. hp를 이니셜라이저 중
@@ -22,14 +22,14 @@ struct player
 };
 
 // 이전의 방법: 넣어준 player의 hp값을 깎아준다. 
-void damaged(player* player)
+void damaged(player1* player)
 {
 	player->hp -= 10; 
 }
 
 int main()
 {
-	player p1; 
+	player1 p1; 
 
 	damaged(&p1); // 입력ㄷ받은 플레이어의 hp를 깎아주는 함수 
 
@@ -48,4 +48,52 @@ int main()
 	// >> 멤버함수 하나로, this 포인터 변수 덕분에 들어오는 모든 인자들 각자에 접근할 수 있게 된거임. 
 
 }
+
+
+
+// ** 객체지향적 프로그래밍 **
+// 정의:함수 먼저(동작먼저). 그 다음에 변수 작성하기. 
+// 예시: 몬스터와 플레이어가 서로를 공격하고 대미지를 입는 프로그램 구현하기. 
+
+class player // 기본이 private
+{
+	// 1. 플레이어의 동작(함수)를 구현한다.
+	// 파이어볼을 발사할 수 있다. 
+	void fireball(monster* monster)
+	{
+
+	}
+
+	// 달릴 수 있다.
+	void run(monster* monster)
+	{
+
+	}
+
+	// 2. 1의 함수에 필요한 변수들을 작성한다. 
+
+	int speed;
+	int mp;
+};
+
+
+struct monster // 기본이 public
+{
+	// 1. 몬스터가 플레이어의 공격을 받는다 
+	void damaged(player* player)
+	{
+
+	}
+
+	// 2. 몬스터가 플레이어를 공격
+	void damaged(player* player)
+	{
+
+	}
+
+	// 3. 1,2 번 함수에 필요한 변수 작성
+
+	int att;
+	int hp;
+};
 
