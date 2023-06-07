@@ -25,7 +25,8 @@
 // ** 배열로 큐를 만드는 방법 ** + 탬플릿 클래스 
 
 // 1. 템플릿 클래스 구현 
-template <typename T>
+
+template <typename T> // 일단 선언, 타입 네임(그릇으로 쓸거) 
 class qu
 {
 public:
@@ -40,18 +41,17 @@ public:
     void push(T data) // 1. 배열 맨 뒤에 데이터가 들어오는 함수 
         // 들어오는 데이터의 자료형을 템플릿으로 구현했으므로, 자료형은 T
     {
-        mdata[mEnd] = data;
+        mdata[mendindex] = data; 
         mendindex++;
     }
 
-    T pop() // 2. 배열 맨 앞의 데이터를 리턴 & 맨 앞의 데이터를 해제(원리: froint index 한칸 이동) 
+    T tpop() // 2. 배열 맨 앞의 데이터를 리턴 & 맨 앞의 데이터를 해제(원리: froint index 한칸 이동) //top+pop
         // 들어오는 데이터의 자료형을 템플릿으로 구현했으므로, 자료형은 T
     {
         return mdata [mfrontindex++];
         // 우선 맨 앞의 데이터를 리턴한 후
-        // 후위연산자를 이용해, frontiindex를 한 칸 우측으로 옮겨줌. 
+        // 후위연산자를 이용해, frontindex를 한 칸 우측으로 옮겨줌. 
     }
-
 
 private:
     T mdata[256]; 
@@ -72,7 +72,7 @@ int main()
     queue.push(3); 
     queue.push(4); 
 
-    int pop = queue.pop();
+    int pop = queue.tpop();
 
     //Queue<char> queue;
 

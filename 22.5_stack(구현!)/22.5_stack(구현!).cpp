@@ -26,9 +26,9 @@ public:
 
 		}
 
-		int data; // 단점: char 형 등 다른 자료형을 구혀하고 싶다면...~ 
+		int data;
+		// 단점: char 형 등 다른 자료형을 구혀하고 싶다면...~ 
 		// char ch; 이렇게 넣어주면 되지만
-
 		// 그럼 push 함수가 int 형, char형 각각 따로따로 추가도게 된다. 
 
 		node* prev;// tail 앞의 노드를 가리키는 포인터 변수 (pop - 가장 윗값을 지우는 함수에서 사용)
@@ -48,38 +48,38 @@ public:
 	{
 		if (mhead == nullptr) // 첫 스텍 생성
 		{
-			mhead = new node();
-			mhead->data - num;
-			mhead->prev = nullptr; // 이거 잘 익혀두가 
-			mhead->next = nullptr;
-			mtail = mhead;
+			mhead = new node(); // n1 생성 후 head에 리턴된 주소값 연결 
+			mhead->data = num; // n1에 데이터 넣어주기 
+
+			mhead->prev = nullptr; // 노드의 prev와 next null화 (이미 생성자에서 해주고있긴 함) 
+			mhead->next = nullptr; // 제일 첫 노드의 값이니까요.. 
+
+			mtail = mhead; // 첫노드이자 마지막 노드가 생성되었으니 mtail에 mhead를 연결 
 		}
 
 		else // 다음 스텍 생성
 		{
 			mtail->next = new node();
-			mtail->next->data = num;
+			mtail->next->data = num; // 테일로 새로 생성한 노드에 값을 넣어줌. 
 
-			// 테일을 끝으로 넘기기 전, 그 테일을 프리브에 연결
+			// ***테일을 끝으로 넘기기 전, 그 테일을 프리브에 연결***
 			mtail->next->prev = mtail;
 			mtail->next->next = nullptr; // 마지막 노드에 널값
 
 			// 테일 이동
 			mtail = mtail->next;
-
-
 		}
 	}
 
 	void pop() // 맨 위의 스텍을 지우는 함수 
 	{
-		node* last = mtail; // 새로운 리모컨을 추가.
+		//node* last = mtail; // 새로운 리모컨을 추가.
 
-		mtail = mtail->prev; // 테일은 테일 바로 앞의 값을 가리키는 프리브로 연결
-		mtail->next = nullptr; // 이동 후 n3에연결되어있던 것을 해제 
+		mtail = mtail->prev; // 테일은 테일 바로 앞의 값을 가리키는 프리브로 연결 (테일 앞으로 이동) 
+		mtail->next = nullptr; // 이동 후 n3에 연결되어있던 것을 해제 
 
-		delete last; // 리모컨 다 썼으니 할당 해제
-		last = nullptr; // 해제 후 쓰레기값 안 들어가게 null값 넣어주기 
+		//delete last; // 리모컨 다 썼으니 할당 해제 아니 근데 이 리모컨 안썼는데??? 
+		//last = nullptr; // 해제 후 쓰레기값 안 들어가게 null값 넣어주기 
 	}
 
 	int top() // 맨 위의 스택 값을 불러오는 함수 
@@ -89,7 +89,7 @@ public:
 
 private:
 	node* mhead;
-	node* mtail; // 스택용 
+	node* mtail; // 스택에서 사용할 헤드와 테일. 
 };
 
 int main()
@@ -101,7 +101,7 @@ int main()
 	stack1.push(3);
 
 	int top = stack1.top();
-	stack.pop();
+	stack1.pop(); 
 
 	return 0;
 
