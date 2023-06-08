@@ -1,45 +1,53 @@
-﻿//2번
+﻿// 2번 
+
 #include <iostream>
+#include <cstring>
 using namespace std;
 
-int counting = 0;
-char arr[4] = {}; // 경로를 저장할 배열 
-
-void test(int level, char _spell[5])
+int family[8][8] =
+  //A B H C D F G E 
 {
-	if (level == 4) // 4글자를 전부 조합 (깊이 4까지)
-	{
-		// 레벨 4에 도착했을때 카운트
-		counting++;
-		return;
-	}
+	0,1,1,1,0,0,0,0, // A : 65 
+	0,0,0,0,0,0,0,0, // B : 66
+	0,0,0,0,0,0,0,0, // H : 72
+	0,0,0,0,1,0,1,1, // C : 67
+	0,0,0,0,0,1,0,0, // D : 68
+	0,0,0,0,0,0,0,0, // F : 70
+	0,0,0,0,0,0,0,0, // G : 71
+	0,0,0,0,0,0,0,0, // E : 69
+};
 
-
-	// 4글자를 입력받음 (가지 4개)
-	for (int i = 0; i < 4; i++)
-	{
-		//B,T가 붙어있을때는, 다음 반복문으로 넘어간다. 
-		//따라서 continue가 옳다. 
-		if ((_spell[level] == 'B' && _spell[i] == 'T') || (_spell[level] == 'T' && _spell[i] == 'B'))
-		{ // leve1>0, level-1 이라는 조건이 붙어야함. 
-			continue;
-		}
-
-		arr[level] = _spell[i]; // 진입 전, arr에 경로 저장 
-		test(level + 1, _spell); // 다음으로 내려갈 수 있게 lv+1
-		arr[level] = 0;
-	}
-
-}
+char name[9] = "ABHCDFGE"; 
+char path[9] = ""; 
+int index = 0; 
 
 int main()
 {
-	char spell[5] = {};
-	cin >> spell;
+	char ch = 0; 
+	cin >> ch; 
 
-	// 네 글자를 조합해서 나올 수 있는
-	// 모든 경우의 수를 출력.
+	// 가로로 돌면서 1이 2개 이상일때 출력 
+	for (int y = 0; y < 8; y++)
+	{
+		for (int x = 0; x < 8; x++)
+		{
+			if (family[y][x] == 1)
+			{
+				path[index++] = name[x]; 
+			}
+		}
 
-	test(0, spell);
-	cout << counting;
+		// path 의 길이가 2 이상일때 출력 
+		// 그 후 path 청소 
+		if (strlen(path) >= 2)
+		{
+			cout << path;
+			// path 청소 
+			for (int i = 0; i < 9; i++)
+			{
+				path[i] = '\0';  
+			}
+			index = 0; 
+		}
+	}
 }

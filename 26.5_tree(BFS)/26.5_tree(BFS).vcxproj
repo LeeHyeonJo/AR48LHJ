@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6075331f-593c-46a6-b192-efed0cb4acf8}</ProjectGuid>
-    <RootNamespace>My26Tree</RootNamespace>
+    <ProjectGuid>{1c537e2a-146b-49a6-bbde-b3f20923814d}</ProjectGuid>
+    <RootNamespace>My265treeBFS</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>26_Tree(DFS!)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="26_Tree.cpp" />
+    <ClCompile Include="26.5_tree(BFS).cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -70,7 +70,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25.graph", "25.graph\25.gra
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "22.5_stack(구현!)", "22.5_stack(구현!)\22.5_stack(구현!).vcxproj", "{3A71D4D0-FFA2-41D2-9045-E6B03C7F6BBC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26_Tree", "26_Tree\26_Tree.vcxproj", "{6075331F-593C-46A6-B192-EFED0CB4ACF8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26_Tree(DFS!)", "26_Tree\26_Tree.vcxproj", "{6075331F-593C-46A6-B192-EFED0CB4ACF8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26.5_tree(BFS)", "26.5_tree(BFS)\26.5_tree(BFS).vcxproj", "{1C537E2A-146B-49A6-BBDE-B3F20923814D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -328,6 +330,14 @@ Global
 		{6075331F-593C-46A6-B192-EFED0CB4ACF8}.Release|x64.Build.0 = Release|x64
 		{6075331F-593C-46A6-B192-EFED0CB4ACF8}.Release|x86.ActiveCfg = Release|Win32
 		{6075331F-593C-46A6-B192-EFED0CB4ACF8}.Release|x86.Build.0 = Release|Win32
+		{1C537E2A-146B-49A6-BBDE-B3F20923814D}.Debug|x64.ActiveCfg = Debug|x64
+		{1C537E2A-146B-49A6-BBDE-B3F20923814D}.Debug|x64.Build.0 = Debug|x64
+		{1C537E2A-146B-49A6-BBDE-B3F20923814D}.Debug|x86.ActiveCfg = Debug|Win32
+		{1C537E2A-146B-49A6-BBDE-B3F20923814D}.Debug|x86.Build.0 = Debug|Win32
+		{1C537E2A-146B-49A6-BBDE-B3F20923814D}.Release|x64.ActiveCfg = Release|x64
+		{1C537E2A-146B-49A6-BBDE-B3F20923814D}.Release|x64.Build.0 = Release|x64
+		{1C537E2A-146B-49A6-BBDE-B3F20923814D}.Release|x86.ActiveCfg = Release|Win32
+		{1C537E2A-146B-49A6-BBDE-B3F20923814D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
