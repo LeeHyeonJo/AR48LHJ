@@ -24,6 +24,7 @@
     <ProjectGuid>{6075331f-593c-46a6-b192-efed0cb4acf8}</ProjectGuid>
     <RootNamespace>My26Tree</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>26_Tree(!)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

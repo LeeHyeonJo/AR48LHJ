@@ -26,7 +26,7 @@
 
 // 1. 배열을 이용해서 표현한 트리. 
 // 단방향으로만 얽혀야 함 
-int map[5][5] =
+int matrix[5][5] =
 {
     0,1,1,0,0, 
     0,0,0,1,1,
@@ -36,6 +36,17 @@ int map[5][5] =
 };
 // ㄴ 이거 그림으로 그린 상태에서 복습하기 
 
+int matrixGraph[5][5] =
+{
+    0,1,0,0,0,
+    0,0,1,1,0,
+    0,0,0,0,0,
+    1,0,0,0,1,
+    0,0,0,0,0,
+};
+
+
+
 // 1-1. 단방향 트리를 순회를 시켜보자. 
 // 원리: 가로로 한줄씩 돌면서, 갈 수 있는 곳(1)을 찾는다. 
 // 만나면, 재귀함수를 통해서 (배열로 치면) 그 아래 줄로 내려간다. 
@@ -43,17 +54,18 @@ int map[5][5] =
 
 // ** 이거 필기 복붙하기 ** 
 
-char value[10] = "TBECD"; // 출력용 
-char path[10] = "";  // 방문 여부 체크 
-int visited[10] = {}; // 방문 여부 체크 
+char valueGr[10] = "TEQWA"; // 출력용 
+char value[10] = "TBECD"; // 출력용2
+char path[10] = ""; // 길 기록용 
+int visited[10] = {}; // 방문 여부 체크 (중복방지) 
 
-void dfs(int level, int now) // dfs = 깊이 탐색 
+void dfs(int now)
 {
-    std::cout << value[now]; // 경로를 출력할거임. 
+    std::cout << valueGr[now];
 
     for (int i = 0; i < 5; i++)
     {
-        if (map[now][i] == 1 && visited[i]==0) // 갈 수 있는 루트일때
+        if (matrixGraph[now][i] == 1 && visited[i] == 0) // 갈 수 있는 루트일때
         {
             //// 재귀함수를 활용해 그 루트 안으로 들어간다. 
             //path[level + 1] = value[i];
@@ -63,9 +75,27 @@ void dfs(int level, int now) // dfs = 깊이 탐색
             //** 그래프의 순회: 나올 필요가 없으므로 (연결된 다른 쪽으로 가야지) 
             //** 굳이 리턴할 필요 없음. 알아서 돌게 하면 된다. 
 
-            visited[i] = 1; 
+            visited[i] = 1;
             dfs(i);
+        }
+    }
+}
 
+
+void dfs(int level, int now) // dfs = 깊이 탐색 
+{
+    std::cout << value[now]; // 경로를 출력할거임. 
+
+    for (int i = 0; i < 5; i++)
+    {
+        if (matrix[now][i] == 1 && visited[i]==0) // 갈 수 있는 루트일때
+        {
+            if (matrix[now][i] == 1)
+            {
+                path[level + 1] = value[i];
+                dfs(level + 1, i);
+                path[level + 1] = 0;
+            }
         }
     }
 }
@@ -97,7 +127,14 @@ void dfs(int level, int now) // dfs = 깊이 탐색
 
 int main()
 {
-    dfs(0,0);  
+    dfs(0, 0);
+
+    std::cout << std::endl;
+
+    visited[0] = 1;
+    dfs(0);
+
+    return 0;
 
     // 비지티스 써둔 이유; 제일 처음 T값 사용했다는 의미. 
 }
