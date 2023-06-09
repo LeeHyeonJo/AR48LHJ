@@ -135,5 +135,54 @@ int main()
 
         // 도착 좌표가 필요한 곳에 if 문 걸고 찾을 것 
 
+
+            //길찾기 BFS
+        struct MazeNode
+    {
+        int x;
+        int y;
+    };
+
+    int map[3][4] = {};
+    std::queue<MazeNode> mazeQueue;
+    mazeQueue.push(MazeNode({ 0,2 }));
+
+    int direct[4][2] =
+    {
+        0,-1,
+        1,0,
+        0,1,
+        -1,0,
+    };
+
+    while (!mazeQueue.empty())
+    {
+        MazeNode p = mazeQueue.front();
+        map[p.y][p.x] = 1;
+
+        if (p.x == 3 && p.y == 0)
+        {
+            // 찾았다.
+        }
+
+        for (size_t i = 0; i < 4; i++)
+        {
+            int newX = p.x + direct[i][0];
+            int newY = p.y + direct[i][1];
+
+            if (map[newY][newX] == 1)
+                continue;
+            if (newX < 0 || newY < 0)
+                continue;
+            if (newX >= 4 || newY >= 3)
+                continue;
+
+            mazeQueue.push(MazeNode({ newX , newY }));
+
+        }
+
+        mazeQueue.pop();
+    }
+
 }
 

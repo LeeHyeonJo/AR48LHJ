@@ -66,7 +66,7 @@ void dfs(int now)
 
     for (int i = 0; i < 5; i++)
     {
-        if (matrixGraph[now][i] == 1) // 갈 수 있는 루트일때
+        if (matrixGraph[now][i] == 1 && visited[i] == 0) // 갈 수 있는 루트일때
         {
             //// 재귀함수를 활용해 그 루트 안으로 들어간다. 
             //path[level + 1] = value[i];
@@ -75,8 +75,9 @@ void dfs(int now)
 
             //** 그래프의 순회: 나올 필요가 없으므로 (연결된 다른 쪽으로 가야지) 
             //** 굳이 리턴할 필요 없음. 알아서 돌게 하면 된다. 
-
-            dfs(i); // 흠 이거 아닌듯? 
+            visited[i] = 1; 
+            dfs(i); // 흠 이거 아닌듯? 순회가 안끝남 
+                        // 비지티드로 체크해주지 않으면 무한순회 발생!! 
         }
     }
 }
