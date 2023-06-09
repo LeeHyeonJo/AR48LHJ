@@ -1,47 +1,57 @@
-﻿// 4번
+﻿// 7번
 #include <iostream>
-using namespace std; 
+using namespace std;
+int btree[8] = {0,3,7,10,5,6,3,6}; 
+	   		//  0 1 2  3 4 5 6 7
+int visited[8] = {}; // 방문 여부 체크 
+int path[8] = {};
 
-int matrixGraph[5][5] = // 순회 없는 버전 
+// 이차원 트리에 한해서 일차원 배열로 표현할 수 있다. 
+// 부모 - 자식 공식을 사용하기 위해 인덱스 1부터 값 넣어줌. 
+
+void dfs (int level, int now) // 레벨과, 초기값(변동) 
 {
-	0,1,0,0,0,
-	0,0,1,1,0,
-	0,0,0,0,0,
-	1,0,0,0,1,
-	0,0,0,0,0,
-};
-
-char valueGr[10] = "TEQWA"; // 출력용 
- 
-// int num = 0; 
-int name[7] = { 0,1,2,3,4,5,6 }; 
-
-void dfs(int now)
-{
-	std::cout << valueGr[now];
-
-	for (int i = 0; i < 5; i++)
+	if (level == 2)
 	{
-		if (matrixGraph[now][i] == 1) // 갈 수 있는 루트일때
+		return; 
+	}
+
+	for (int i = 1; i < 8; i++)
+	{
+		if (level == 0)
 		{
-			//// 재귀함수를 활용해 그 루트 안으로 들어간다. 
-			//path[level + 1] = value[i];
-			//dfs(level + 1, i); 
-			//path[level + 1] = 0; <- 무한루프에 걸릴 수 있음. 
-
-			//** 그래프의 순회: 나올 필요가 없으므로 (연결된 다른 쪽으로 가야지) 
-			//** 굳이 리턴할 필요 없음. 알아서 돌게 하면 된다. 
-
-			dfs(i); // 흠 이거 아닌듯? 맞는듯 
+			path[0] = btree[1]; // 제일 첫 값 넣어줌 
 		}
+
+		// 자식쪽 인덱스의 값이 존재하면 내려간다. 
+		if (btree[now * 2] != 0 && visited[i] == 0)
+		{
+			visited[i] = 1; // 첫값 때문에 두번째 자리부터 
+			path[level+1] = btree[now*2]; // 첫값 때문에 두번째 자리부터 
+
+			if (btree[now * 2] % 2 == 0) // 짝수라면 
+			{
+				// 멈추고 출력 
+				for (int i = 0; path[i] != 0; i++)
+				{
+					cout << path[i] << ' '; 
+				}
+			}
+
+			dfs(level + 1, i*2); 
+			path[level+1] = 0; 
+		}
+
 	}
 }
 
 int main()
 {
-	dfs(0);
+	// 1. 트리 입력 
+	//for (int i = 0; i < 8; i++)
+	//{
+	//	cin >> btree[i]; 
+	//}
 
-	return 0;
-
-	// 비지티스 써둔 이유; 제일 처음 T값 사용했다는 의미. 
+	dfs(0, 1); 
 }
