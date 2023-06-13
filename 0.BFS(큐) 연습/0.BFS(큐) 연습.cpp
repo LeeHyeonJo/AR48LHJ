@@ -71,10 +71,10 @@ int main()
 		for (int i = 0; i < 6; i++)
 		{
 			if (bfsMatrix[p.num][i] == 1
-				&& used[i] == 0)
+			  	&& used[i] == 0)
 			{
 				used[i] = 1;
-				queue.push(Node{ i, p.level + 1 });
+ 				queue.push(Node{ i, p.level + 1 });
 			}
 		}
 		queue.pop();
@@ -103,7 +103,8 @@ int main()
 //int* p = new int[num2];
 
 
-///*레벨 29의 이진트리를 BFS로 푸는 문제*///
+///*레벨 29의 이진트리(7번)를 BFS로 푸는 문제*///
+// ** 이건 틀린 풀이!! 내가 한 방법이 맞다!! ** 
 // int main
 // {
 //std::queue<Node2> queue;
