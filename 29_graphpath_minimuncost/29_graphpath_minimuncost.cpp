@@ -5,7 +5,6 @@
 #include <iostream>
 using namespace std; 
 
-
 int map[7][7] =
 {
     // 5,1,35,1,10,70,20
@@ -25,7 +24,7 @@ int value[7] = { 5,1,35,1,10,70,20 };
 //** 가장 빠른 경로를 찾아보자
 
 int visited[7] = {}; // 중복 방문 방지용
-int min1 = 98765454; 
+int min1 = 98765454; // 최소 찾기용 
 
 void run(int now, int sum) // sum 은 1->6(도착점) 에 도달했을때 지나온 모든 노드들의 경로의 합. 
 {
