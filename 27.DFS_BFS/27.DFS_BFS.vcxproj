@@ -24,6 +24,7 @@
     <ProjectGuid>{c56cb68c-baaf-4efa-bf7f-4c22c0625645}</ProjectGuid>
     <RootNamespace>My27DFSBFS</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>27.DFS_BFS(보완)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

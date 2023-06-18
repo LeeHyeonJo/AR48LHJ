@@ -32,8 +32,7 @@ int visited[10] = {}; // 중복 체크를 위한 길 (필수!)
 // - dfs로 탐색 
 // ** 예시는 Z부터 탐색했으므로, Z부터 시작하는 모든 경로를 보게 됨. 
 
-void dfs(int _now, int _level) // level 은 path를 위해 now는 탐색을 위해 
-// void dfs(int _level, int _now)는 왜 안되지??  
+void dfs(int _level, int _now) // level 은 path를 위해 now는 탐색을 위해 
 {
 	// **b. path의 출력 
 	cout << path << endl;
@@ -50,7 +49,7 @@ void dfs(int _now, int _level) // level 은 path를 위해 now는 탐색을 위�
 			// 이어진 경로(alpha[i]를 넣어줌) 
 			path[_level + 1] = alpha[i]; 
 			visited[i] = 1; // 이어진 경로에 방문했다는 기록 (Z->A라면, A를 체크) 
-			dfs(i, _level + 1); // 이어진 경로(i)를 y축으로, level은 1씩 증가
+			dfs(_level + 1, i); // 이어진 경로(i)를 y축으로, level은 1씩 증가 
 								// ㄴ A에 이어지는 경로를 찾기 위해 & path의 인덱스 증가
 			visited[i] = 0;
 			path[_level+1] = 0;
