@@ -49,7 +49,7 @@ void bfs()
 
 }
 
-int main()
+int main() 
 {
 	cin >> start; 
 	visited[start] = 1; 
