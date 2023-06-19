@@ -24,7 +24,7 @@
     <ProjectGuid>{5347ba66-3e36-4631-b0dd-3ac436565727}</ProjectGuid>
     <RootNamespace>My29graphpathminimuncost</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>29_★graphpath_minimuncost(dfs)</ProjectName>
+    <ProjectName>29_graphpath_minimuncost(dfs)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
