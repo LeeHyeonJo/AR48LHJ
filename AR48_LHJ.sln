@@ -74,7 +74,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26_Tree(DFS!)", "26_Tree\26
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "26.5_tree(BFS)", "26.5_tree(BFS)\26.5_tree(BFS).vcxproj", "{1C537E2A-146B-49A6-BBDE-B3F20923814D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27.DFS_BFS", "27.DFS_BFS\27.DFS_BFS.vcxproj", "{C56CB68C-BAAF-4EFA-BF7F-4C22C0625645}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27.DFS_BFS(보완)", "27.DFS_BFS\27.DFS_BFS.vcxproj", "{C56CB68C-BAAF-4EFA-BF7F-4C22C0625645}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "0.BFS(큐) 연습", "0.BFS(큐) 연습\0.BFS(큐) 연습.vcxproj", "{A2648473-5937-4D5D-B59B-98AF6C444023}"
 EndProject
@@ -82,9 +82,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28_graphpath(dfs)", "28_gra
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28.5_graphpath(bfs)", "28.5_graphpath(bfs)\28.5_graphpath(bfs).vcxproj", "{40FD74F0-9DBD-42CF-8576-AD53E48DB3E7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29_graphpath_minimuncost(dfs)", "29_graphpath_minimuncost\29_graphpath_minimuncost.vcxproj", "{5347BA66-3E36-4631-B0DD-3AC436565727}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29_★graphpath_minimuncost(dfs)", "29_graphpath_minimuncost\29_graphpath_minimuncost.vcxproj", "{5347BA66-3E36-4631-B0DD-3AC436565727}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.5_graphpath_minimuncost(bfs)", "29.5_graphpath_minimuncost(bfs)\29.5_graphpath_minimuncost(bfs).vcxproj", "{A1C5F1DB-2060-4AB3-998F-2FFDF4A39334}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.5_★graphpath_minimuncost(bfs)", "29.5_graphpath_minimuncost(bfs)\29.5_graphpath_minimuncost(bfs).vcxproj", "{A1C5F1DB-2060-4AB3-998F-2FFDF4A39334}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "30_opratoroverroading", "30_opratoroverroading\30_opratoroverroading.vcxproj", "{42062419-77BA-45E9-9635-680AE0A6571F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -398,6 +400,14 @@ Global
 		{A1C5F1DB-2060-4AB3-998F-2FFDF4A39334}.Release|x64.Build.0 = Release|x64
 		{A1C5F1DB-2060-4AB3-998F-2FFDF4A39334}.Release|x86.ActiveCfg = Release|Win32
 		{A1C5F1DB-2060-4AB3-998F-2FFDF4A39334}.Release|x86.Build.0 = Release|Win32
+		{42062419-77BA-45E9-9635-680AE0A6571F}.Debug|x64.ActiveCfg = Debug|x64
+		{42062419-77BA-45E9-9635-680AE0A6571F}.Debug|x64.Build.0 = Debug|x64
+		{42062419-77BA-45E9-9635-680AE0A6571F}.Debug|x86.ActiveCfg = Debug|Win32
+		{42062419-77BA-45E9-9635-680AE0A6571F}.Debug|x86.Build.0 = Debug|Win32
+		{42062419-77BA-45E9-9635-680AE0A6571F}.Release|x64.ActiveCfg = Release|x64
+		{42062419-77BA-45E9-9635-680AE0A6571F}.Release|x64.Build.0 = Release|x64
+		{42062419-77BA-45E9-9635-680AE0A6571F}.Release|x86.ActiveCfg = Release|Win32
+		{42062419-77BA-45E9-9635-680AE0A6571F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
