@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework", "Homework", "{4B
 		API목록.txt = API목록.txt
 		개인질문.txt = 개인질문.txt
 		공부할거.txt = 공부할거.txt
+		필기 백업.txt = 필기 백업.txt
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "homeworkpad", "level0(0503)\level0(0503).vcxproj", "{922B2414-B132-4A16-8441-C955BEBB5AD6}"
@@ -82,9 +83,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28_graphpath(dfs)", "28_gra
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28.5_graphpath(bfs)", "28.5_graphpath(bfs)\28.5_graphpath(bfs).vcxproj", "{40FD74F0-9DBD-42CF-8576-AD53E48DB3E7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29_★graphpath_minimuncost(dfs)", "29_graphpath_minimuncost\29_graphpath_minimuncost.vcxproj", "{5347BA66-3E36-4631-B0DD-3AC436565727}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29_graphpath_minimuncost(dfs)", "29_graphpath_minimuncost\29_graphpath_minimuncost.vcxproj", "{5347BA66-3E36-4631-B0DD-3AC436565727}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.5_★graphpath_minimuncost(bfs)", "29.5_graphpath_minimuncost(bfs)\29.5_graphpath_minimuncost(bfs).vcxproj", "{A1C5F1DB-2060-4AB3-998F-2FFDF4A39334}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.5_graphpath_minimuncost(bfs)", "29.5_graphpath_minimuncost(bfs)\29.5_graphpath_minimuncost(bfs).vcxproj", "{A1C5F1DB-2060-4AB3-998F-2FFDF4A39334}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "30_opratoroverroading", "30_opratoroverroading\30_opratoroverroading.vcxproj", "{42062419-77BA-45E9-9635-680AE0A6571F}"
 EndProject
