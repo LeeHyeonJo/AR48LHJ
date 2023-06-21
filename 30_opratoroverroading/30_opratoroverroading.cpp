@@ -24,12 +24,22 @@ struct pos
 	{
 		pos result; // 이 연산자 함수 내부에서 계산 후 나온 결과값을 받아줄 변수 선언
 		result.x = this->x + other.x; // x는 num1.x , other.x 는 num2.x 
-		result.y = y + other.y; // y는 num1.y , other.y 는 num2.y 
+		result.y = this->y + other.y; // y는 num1.y , other.y 는 num2.y 
+				//this 생략 가능 
+
+		// 우항이 인자로 들어오는 값
+		// this는 기본적으로 함수안에 들어있음
+		// 따라서 이때 this는 num1을 가리킴. 
 
 		return result; // 합을 리턴해준다. 
 
 		// ** 또는 this를 사용해도 된다.
-		// ** this 는 자기 자신을 가리키는 값 (질문하기. 인자로 들어오는 값이 this가 아닌가?) 
+		// ** this 는 자기 자신을 가리키는 값 (구조체 자체를 가리키는게 아님) 
+	}
+
+	void test()
+	{
+	
 	}
 };
 
@@ -37,6 +47,9 @@ int main()
 {
 	pos num1{ 3,5 };
 	pos num2{ 1,6 }; 
+
+	num1.test();  // 이때 this가 가리키는건 num1
+	num2.test();  // 이때 this가 가리키는건 num2
 
 	// 두개의 위치를 합치려 하는 경우 
 	int x = num1.x + num2.x;
@@ -52,6 +65,10 @@ int main()
 	// 하단에서 + 연산자의 오버로딩의 작동여부를 확인해보자.
 	// 상단에서 + 연산자의 오버로딩을 구현하면, 정상적으로 작동하는 것을 확인할 수 있다. 
 	pos sum = num1 + num2; 
+
+	// **this가 헷갈린다면. 이하의 함수라고 생각하기.
+	// 오른쪽이 인자로 들어오는 값. 왼쪽이 operator+함수 내부에서 this가 기리키는 값. 
+	// pos sum = num1. +( num2); 
 	// f11로 들어가는 과정을 확인할 것. 
 }
 
