@@ -91,6 +91,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "30_opratoroverroading", "30
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "32_copyconstructor", "32_copyconstructor\32_copyconstructor.vcxproj", "{FA025ECA-6753-4F8B-8805-1C8E9522E1C6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "31_Inheritance", "31_Inheritanxe\31_Inheritanxe.vcxproj", "{FAD225A8-19BA-4F89-9348-7D6AB04F9B88}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -419,6 +421,14 @@ Global
 		{FA025ECA-6753-4F8B-8805-1C8E9522E1C6}.Release|x64.Build.0 = Release|x64
 		{FA025ECA-6753-4F8B-8805-1C8E9522E1C6}.Release|x86.ActiveCfg = Release|Win32
 		{FA025ECA-6753-4F8B-8805-1C8E9522E1C6}.Release|x86.Build.0 = Release|Win32
+		{FAD225A8-19BA-4F89-9348-7D6AB04F9B88}.Debug|x64.ActiveCfg = Debug|x64
+		{FAD225A8-19BA-4F89-9348-7D6AB04F9B88}.Debug|x64.Build.0 = Debug|x64
+		{FAD225A8-19BA-4F89-9348-7D6AB04F9B88}.Debug|x86.ActiveCfg = Debug|Win32
+		{FAD225A8-19BA-4F89-9348-7D6AB04F9B88}.Debug|x86.Build.0 = Debug|Win32
+		{FAD225A8-19BA-4F89-9348-7D6AB04F9B88}.Release|x64.ActiveCfg = Release|x64
+		{FAD225A8-19BA-4F89-9348-7D6AB04F9B88}.Release|x64.Build.0 = Release|x64
+		{FAD225A8-19BA-4F89-9348-7D6AB04F9B88}.Release|x86.ActiveCfg = Release|Win32
+		{FAD225A8-19BA-4F89-9348-7D6AB04F9B88}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

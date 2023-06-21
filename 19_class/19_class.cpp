@@ -48,7 +48,7 @@ public:
         // const Player* this const : this 에 들어오는 주소 수정 불가능 & *this 값도 수정 불가능
             // ㄴ 라고 내부에 써줄 순 없으니, 보기 좋기 함수의 인자 뒤로 const Player*의 콘스트를 보내줌. 
     {
-        this;
+        this; 
         x = 10;
         y = 10; 
     }
