@@ -1,27 +1,35 @@
-﻿// 6번
+﻿// 11번
 #include <iostream>
 using namespace std;
 
-int num = 0; // 자전거 암호 숫자 갯수
-char pw[20][5] = {}; // 자전거 암호들 
-
-// 몇번만에 각 암호들을 해제할 수 있는지 출력 
-
-void dfs(int level)
-{
-	
-}
+char arr[11] = ""; 
 
 int main()
 {
-	cin >> num; 
-	
-	for (int i = 0; i < num; i++)
+	cin >> arr; 
+
+	for (int i = 0; i < strlen(arr); i++)
 	{
-		cin >> pw[i];    
+		if (arr[i] == 'G') // 첫 글자가 G라면 
+		{
+			if (strlen(arr) - i - 1 >= 4)// 뒤에 HOST가 올 공간이 있다면
+			{
+				// 그 다음 글자들 비교 
+				if (arr[i + 1] == 'H' && arr[i + 2] == 'O' && arr[i + 3] == 'S' && arr[i + 4] == 'T')
+				{
+					cout << "존재";
+				}
+
+				else
+				{
+					cout << "존재하지 않음"; // 글자수는 충분, but 다른 글자가 들어감. 
+				}
+			}
+
+			else
+			{
+				cout << "존재하지 않음"; // 글자수 부족 
+			}
+		}
 	}
-
-	// 일단 경로를 기록하며 그게 암호와 일치하는지 여부 체크해야 함
-
-	dfs(0); 
 }
